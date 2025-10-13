@@ -1,7 +1,7 @@
 # OTP Manager
 
 A full-stack application for managing One-Time Password (OTP) across multiple platforms. The system consists of a NestJS backend API and a React frontend interface with internationalization support.
-
+![screenshot](assets/screenshot.png)
 ## 🌟 Features
 
 - **User Authentication**
@@ -67,6 +67,11 @@ cp apps/api/.env.example apps/api/.env
 cd apps/api && npx prisma migrate deploy
 ```
 
+4. Execute seed data population:
+```bash
+cd apps/api && npx prisma db seed
+```
+
 ## 🏃‍♂️ Running the Application
 
 Start both services in separate terminals:
@@ -82,6 +87,8 @@ pnpm --filter @otp-manager/web dev
 The application will be available at:
 - API: `http://localhost:3000`
 - Web: `http://localhost:5173`
+
+Default account credentials: `admin@example.com` / `admin123`
 
 ## 🧪 Testing
 
