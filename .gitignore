@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+.clinerules
+.env
+node_modules/
+dist/

@@ -1,0 +1,11 @@
+services:
+  otp-manager:
+    image: ghcr.io/malonzhao/otp-manager:latest
+    environment:
+      - ENCRYPTION_KEY=abcdefghijklmnopqrstuvwxyz123456
+      - JWT_SECRET=otp_manager_secret_key
+      - JWT_REFRESH_SECRET=otp_manager_refresh_secret_key
+    ports:
+      - "80:80"
+    volumes:
+      - ./data:/app/data
