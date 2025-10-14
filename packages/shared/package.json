@@ -1,0 +1,16 @@
+{
+  "name": "@otp-manager/shared",
+  "version": "1.0.0",
+  "description": "Shared types, utilities and constants for OTP Manager platform",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "otp-manager",
+    "shared"
+  ],
+  "author": "",
+  "license": "MIT"
+}
