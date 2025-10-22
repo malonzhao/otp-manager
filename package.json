@@ -1,6 +1,6 @@
 {
   "name": "otp-manager-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A full-stack application for managing One-Time Password (OTP) across multiple platforms.",
   "scripts": {
     "dev": "pnpm -r --parallel dev",
