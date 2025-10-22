@@ -255,8 +255,12 @@ const Dashboard: React.FC = () => {
 
     setFormErrors({});
     
+    const cleanedPlatform = {
+      ...newPlatform,
+      secret: newPlatform.secret.replace(/\s+/g, '')
+    };
     try {
-      await createUserPlatform(newPlatform);
+      await createUserPlatform(cleanedPlatform);
       setShowBindPlatform(false);
       setNewPlatform({ platformId: '', accountName: '', secret: '' });
     } catch (error: any) {
